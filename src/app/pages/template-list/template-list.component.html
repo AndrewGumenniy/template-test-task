@@ -1,0 +1,10 @@
+<mat-list>
+    <div mat-subheader>Templates</div>
+    <mat-list-item *ngFor="let template of templateList">
+      <mat-icon mat-list-icon>folder</mat-icon>
+      <div mat-line><a [routerLink]="['/template-item', template.id]">
+        {{template.name}}
+      </a></div>
+      <div mat-line> {{template.modified | date:'short'}} </div>
+    </mat-list-item>
+</mat-list>

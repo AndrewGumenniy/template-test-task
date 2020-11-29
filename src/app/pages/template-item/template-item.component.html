@@ -1,0 +1,4 @@
+<app-edit-panel *ngIf="showEditPanel" [templateName]="templateName" [fontSize]="fontSize" 
+                (nameChangeEvent)="changeName($event)" (fontSizeChangeEvent)="changeFontSize($event)">
+</app-edit-panel>
+<div #template [innerHTML] = "templateItem.template | trustHtml"></div>

@@ -1,0 +1,23 @@
+.template {
+    padding: 10px;
+    height: 100vh;
+    font-size: 16px;
+}
+
+.editable {
+    min-width: 100px;
+    min-height: 20px;
+    width: min-content;
+    height: min-content;
+    padding: 10px;
+    text-align: center;
+}
+
+.editable:hover {
+    box-shadow: 0px 0px 0px 2px lightgrey;
+    cursor: pointer;
+}
+
+.editable.active {
+    box-shadow: 0px 0px 0px 2px #666666;
+}
